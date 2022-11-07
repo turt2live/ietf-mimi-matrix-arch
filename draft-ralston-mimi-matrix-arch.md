@@ -54,9 +54,9 @@ Matrix is an existing open standard for decentralized communication, suitable fo
 Voice over IP (VoIP) signaling, Internet of Things (IoT) communication, and bringing other existing
 communication platforms together.
 
-Though the existing Matrix specification as a whole (found online: {{MxSpec}}) is quite large, it is 
-easily broken down into reusable specifications for simpler and more effective implementation. This 
-document serves to explore each of the existing specification's documents/APIs and how they relate to the 
+Though the existing Matrix specification as a whole (found online: {{MxSpec}}) is quite large, it is
+easily broken down into reusable specifications for simpler and more effective implementation. This
+document serves to explore each of the existing specification's documents/APIs and how they relate to the
 More Instant Messaging Interoperability (MIMI) Working Group (WG), if at all, and cover the general
 architecture of Matrix.
 
