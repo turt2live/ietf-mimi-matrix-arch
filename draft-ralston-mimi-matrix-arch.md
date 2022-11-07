@@ -193,8 +193,9 @@ Typically linked to a logged-in session, a device has an opaque ID to identify i
 applicable encryption keys for end-to-end encryption.
 
 Multiple algorithms for encryption are supported, though the Matrix specification currently uses its own
-Olm and Megolm algorithms for encryption. For increased interoperability, Matrix would adopt MLS {{?I-D.
-ietf-mls-protocol}} instead, likely with minor changes to support decentralized environments {{DMLS}}.
+Olm and Megolm algorithms for encryption. For increased interoperability, Matrix would adopt MLS
+{{?I-D.ietf-mls-protocol}} instead, likely with minor changes to support decentralized environments
+{{DMLS}}.
 
 # API Surfaces
 
