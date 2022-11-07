@@ -1,0 +1,147 @@
+
+
+
+
+More Instant Messaging Interoperability                       T. Ralston
+Internet-Draft                          The Matrix.org Foundation C.I.C.
+Intended status: Informational                           7 November 2022
+Expires: 11 May 2023
+
+
+                      Matrix Architecture Overview
+                 draft-ralston-mimi-matrix-arch-latest
+
+Abstract
+
+   This document describes the overall architecture of Matrix, an open
+   standard for secure, decentralized, communication.
+
+About This Document
+
+   This note is to be removed before publishing as an RFC.
+
+   The latest revision of this draft can be found at
+   https://turt2live.github.io/ietf-mimi-matrix-arch/draft-ralston-mimi-
+   matrix-arch.html.  Status information for this document may be found
+   at https://datatracker.ietf.org/doc/draft-ralston-mimi-matrix-arch/.
+
+   Discussion of this document takes place on the More Instant Messaging
+   Interoperability Working Group mailing list (mailto:mimi@ietf.org),
+   which is archived at https://mailarchive.ietf.org/arch/browse/mimi/.
+   Subscribe at https://www.ietf.org/mailman/listinfo/mimi/.
+
+   Source for this draft and an issue tracker can be found at
+   https://github.com/turt2live/ietf-mimi-matrix-arch.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on 11 May 2023.
+
+Copyright Notice
+
+   Copyright (c) 2022 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.  Code Components
+   extracted from this document must include Revised BSD License text as
+   described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Revised BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Network architecture
+   3.  Security Considerations
+   4.  IANA Considerations
+   5.  Informative References
+   Author's Address
+
+1.  Introduction
+
+   Matrix is an existing open standard for decentralized communication,
+   suitable for Instant Messaging (IM), Voice over IP (VoIP) signaling,
+   Internet of Things (IoT) communication, and bringing other existing
+   communication platforms together.
+
+   Though the existing Matrix specification as a whole (found online:
+   [MxSpec]) is quite large, it is easily broken down into reusable
+   specifications for simpler and more effective implementation.  This
+   document serves to explore each of the existing specification's
+   documents/APIs and how they relate to the More Instant Messaging
+   Interoperability (MIMI) Working Group (WG), if at all, and cover the
+   general architecture of Matrix.
+
+   This document assumes some prior knowledge of federated or
+   decentralized systems, such as the principles of electronic mail.
+
+2.  Network architecture
+
+                    +--------------------------+
+                    | @alice:hs1.example.org   |
+                    +--------------------------+
+                    | @bob:hs1.example.org     |
+                    +--------------------------+
+                    | @charlie:hs1.example.org |
+                    +-------------+------------+
+                                  |
+                        +---------+--------+
+                        |                  |
+                        |  Homeserver 1    |
+                        |  hs1.example.org |
+                        |                  |
+                        +-------v--^-------+
+                                v  ^
+                                v  ^
+                                v  ^
+                        +-------v--^-------+
+                        |                  |
+                        |  Homeserver 2    |
+                        |  hs2.example.org |
+                        |                  |
+                        +---------+--------+
+                                  |
+                    +-------------+------------+
+                    | @dan:hs2.example.org     |
+                    +--------------------------+
+                    | @erin:hs2.example.org    |
+                    +--------------------------+
+
+              Figure 1: Simple Network Architecture of Matrix
+
+   TODO
+
+3.  Security Considerations
+
+   TODO Security
+
+4.  IANA Considerations
+
+   This document has no IANA actions.
+
+5.  Informative References
+
+   [MxSpec]   The Matrix.org Foundation C.I.C., "Matrix Specification |
+              v1.4", 2022, <https://spec.matrix.org/v1.4/>.
+
+Author's Address
+
+   Travis Ralston
+   The Matrix.org Foundation C.I.C.
+   Email: travisr@matrix.org
