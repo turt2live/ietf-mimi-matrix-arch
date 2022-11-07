@@ -12,9 +12,9 @@ v: 3
 area: "Applications and Real-Time"
 workgroup: "More Instant Messaging Interoperability"
 keyword:
- - next generation
- - unicorn
- - sparkling distributed ledger
+ - matrix
+ - mimi
+ - architecture
 venue:
   group: "More Instant Messaging Interoperability"
   type: "Working Group"
@@ -32,23 +32,46 @@ author:
 normative:
 
 informative:
+  MxSpec:
+    target: https://spec.matrix.org/v1.4/
+    title: "Matrix Specification | v1.4"
+    date: 2022
+    author:
+      - org: The Matrix.org Foundation C.I.C.
 
 
 --- abstract
 
-TODO Abstract
+This document describes the overall architecture of Matrix, an open standard for secure, decentralized,
+communication.
 
 
 --- middle
 
 # Introduction
 
-TODO Introduction
+Matrix is an existing open standard for decentralized communication, suitable for Instant Messaging (IM),
+Voice over IP (VoIP) signaling, Internet of Things (IoT) communication, and bringing other existing
+communication platforms together.
+
+Though the existing Matrix specification as a whole (found online: {{MxSpec}}) is quite large, it is 
+easily broken down into reusable specifications for simpler and more effective implementation. This 
+document serves to explore each of the existing specification's documents/APIs and how they relate to the 
+More Instant Messaging Interoperability (MIMI) Working Group (WG), if at all, and cover the general
+architecture of Matrix.
+
+This document assumes some prior knowledge of federated or decentralized systems, such as the principles
+of electronic mail.
 
 
-# Conventions and Definitions
+# Network architecture
 
-{::boilerplate bcp14-tagged}
+~~~ aasvg
+{::include art/network-arch.ascii-art}
+~~~
+{: #fig-network-arch title="Simple Network Architecture of Matrix"}
+
+TODO
 
 
 # Security Considerations
@@ -62,8 +85,3 @@ This document has no IANA actions.
 
 
 --- back
-
-# Acknowledgments
-{:numbered="false"}
-
-TODO acknowledge.
